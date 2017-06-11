@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="calculadora">
+<head>
+	<title>APP</title>
+</head>
+<body ng-controller="controllerApp">
+	<input ng-model="cep">
+
+	<button 
+		ng-click="buscarCep(cep)"
+		ng-disabled="!cep">
+		BUSCAR CEP
+	</button>
+
+	<input 
+		ng-model="localidade" 
+		ng-if="localidade">
+
+	<script 
+		type="text/javascript" 
+		src="angular.min.js">
+	</script>
+
+	<script 
+		type="text/javascript" 
+		src="main.js">
+	</script>	
+</body>
+</html>
